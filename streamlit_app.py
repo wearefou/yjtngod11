@@ -5,16 +5,16 @@ import streamlit as st
 import pandas as pd
 
 # 1. 제목
-st.title("Streamlit 기본 예제 페이지")
+st.title("김영준의 교육")
 
 # 2. 부제목
-st.subheader("이 페이지는 다양한 Streamlit 기능을 보여줍니다.")
+st.subheader("이런 학생이?!")
 
 # 3. 판다스 데이터프레임 기반 표 출력
 df = pd.DataFrame({
-    "Name": ["Alice", "Bob", "Charlie"],
-    "Age": [24, 30, 29],
-    "Country": ["Korea", "USA", "UK"]
+    "이름": ["손하람", "Bob", "Charlie"],
+    "나이": [18, 30, 29],
+    "나라": ["Korea", "USA", "UK"]
 })
 st.write("데이터프레임 예제")
 st.dataframe(df)
@@ -52,7 +52,7 @@ st.markdown(
 
 # 6. 이미지 표시
 st.write("이미지 표시 예제")
-st.image("https://www.streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png", caption="Streamlit 로고")
+st.image("https://mblogthumb-phinf.pstatic.net/MjAyMzAzMjRfMjY0/MDAxNjc5NjY0NzA4OTY1.jNaCcAtWCOIOI9DkkO-rh7qJbcK9JnoopNiHlnjKkLIg.-YVOnacHmfpc3cMObzDH9Layy1bVbiJVEWLQNN_5Z-Yg.JPEG.sangho0322/IMG_3779.JPG?type=w800", caption="Streamlit 로고")
 
 # 7. 유튜브 링크 (썸네일 표시)
 st.write("유튜브 동영상 예제")
